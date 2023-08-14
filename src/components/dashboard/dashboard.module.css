@@ -1,0 +1,85 @@
+
+.topInfo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    justify-content:space-between;
+}
+
+.topInfo div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.topInfo svg{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+    width: 24px;
+    height: 24px;
+    padding: 4.157px 4.417px 2.25px 1.991px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.topInfo p{
+    color: #000;
+    /* position: absolute; */
+    top: auto;
+    /* typography/set/h3 - medium */
+    font-family: TT Norms Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 26px; /* 144.444% */
+}
+
+.topInfo input{
+    width: 100%;
+}
+
+
+
+.downInfo{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.downInfo h3{
+    color: #000;
+    text-align: start;
+    /* typography/0-Recommended/H3 - Bold */
+    font-family: TT Norms Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 144.444% */
+}
+
+.downInfo p{
+    color: #000;
+    text-align: start;
+    /* typography/set/body - normal */
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+}
+
+.p2{
+    color: #000;
+
+    /* typography/set/body - normal */
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px; /* 150% */
+}
+
+
+
