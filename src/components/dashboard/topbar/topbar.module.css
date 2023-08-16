@@ -1,0 +1,39 @@
+.topInfo {
+    display: flex;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topInfo div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image {
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+
+.topInfo p {
+    color: #000;
+    /* position: absolute; */
+    top: auto;
+    /* typography/set/h3 - medium */
+    font-family: TT Norms Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+.image2 {
+    margin-right: 1%;
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
