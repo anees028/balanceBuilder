@@ -11,9 +11,11 @@ import logout from '../../assets/icons/logout.svg'
 const Navbar = () => {
 
     return (
-        <div className={classes.nav}>
-            <a href='/#'><img src={balancebuilder} alt='balancebuilder' /></a>
-            <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <div className={classes.nav} >
+            <div className={classes.navicon}>
+                <a href='/#'><img src={balancebuilder} alt='balancebuilder' /></a>
+            </div>
+            <div className={classes.navmenu} >
                 <ul >
                     <li><a href='/#'><img src={setting} alt='setting' /></a></li>
                     <li><a href='/#'><img src={reports} alt='reports' /></a></li>
