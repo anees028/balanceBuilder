@@ -1,16 +1,15 @@
 import React from "react";
 import classes from './dashboard.module.css';
-import ServiceCard from "../../shared/servicecard";
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 
 
 import bolt from '../../assets/icons/bolt.svg'
 import frame from '../../assets/icons/frame.svg'
 import flag from '../../assets/icons/flag.svg'
-import ResultCard from "../../shared/resultCard";
 import Topbar from "./topbar/topbar";
 import QuickSelect from "./quickselect/quickselect";
+import ServiceRequest from "./servicerequest/servicerequest";
+import SpecificSearch from "./specificsearch/specificsearch";
+import SearchResult from "./searchresults/searchresult";
 
 const Dashboard = (props) => {
 
@@ -22,7 +21,7 @@ const Dashboard = (props) => {
             name: 'Substation name',
             status: 'Pending',
             date: 'Change detected - 08/06/22',
-            description: 'Go to substation to review change ->',
+            description: 'Go to substation to review change',
             zone: 'Zone S',
             region: 'Region XYZ'
         }, {
@@ -30,7 +29,7 @@ const Dashboard = (props) => {
             name: 'Balance name',
             status: 'Pending',
             date: 'Error detected - 08/06/22',
-            description: 'Go to substation to review change ->',
+            description: 'Go to substation to review change',
             zone: 'Zone S',
             region: 'Region XYZ'
         },
@@ -39,7 +38,7 @@ const Dashboard = (props) => {
             name: 'NA-VI4',
             status: 'Cancel',
             date: 'Error detected - 08/06/22',
-            description: 'Go to substation to review change ->',
+            description: 'Go to substation to review change',
             zone: 'Zone S',
             region: 'Region XYZ'
         }, {
@@ -47,7 +46,7 @@ const Dashboard = (props) => {
             name: 'NA-VI5',
             status: 'Pending',
             date: 'Change detected - 08/06/22',
-            description: 'Go to substation to review change ->',
+            description: 'Go to substation to review change',
             zone: 'Zone S',
             region: 'Region XYZ'
         },
@@ -114,23 +113,9 @@ const Dashboard = (props) => {
             <Topbar title={toptitle} />
             <hr></hr>
             <QuickSelect />
-            <ServiceCard objectData={serviceRequest} />
-            <span className={classes.resultSection} style={{ display: 'flex', flexDirection: 'row', textAlign: 'Inblock' }}>
-                <p>Search for a specific</p>&nbsp;<img src={flag} alt="flag" /> &nbsp;
-                <p>region,</p>&nbsp;<img src={bolt} alt="bolt" /> &nbsp;<p>substation or </p> &nbsp;<img src={frame} alt="frame" />&nbsp;<p> balance </p>
-            </span>
-            <Box
-                sx={{
-                    width: 500,
-                    maxWidth: '100%',
-                }}
-            >
-                <TextField fullWidth label="Search for a region or substation" id="fullWidth" />
-            </Box>
-            <span className={classes.resultSection} style={{ display: 'flex', flexDirection: 'row', textAlign: 'Inblock' }}>
-                <p>Search Result </p>&nbsp;<img src={flag} alt="flag" /> &nbsp;
-            </span>
-            <ResultCard results={results}/>
+            <ServiceRequest objectData={serviceRequest} />
+            <SpecificSearch />
+            <SearchResult results={results} />
         </div>
     )
 

@@ -31,7 +31,7 @@ const ServiceRequest = (props) => {
           </a>
         </div>
       </div>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <div style={{ display: "flex", flexDirection: "row", flexWrap:'wrap' }}>
         {card}
       </div>
     </div>

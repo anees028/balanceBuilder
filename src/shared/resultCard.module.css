@@ -1,0 +1,103 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 380px;
+  max-height: 86px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  gap: 10px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background: var(--colors-gray-100, #e1e4e6);
+}
+
+.upperpart {
+  display: flex;
+  width: 356px;
+  min-height: 32px;
+  margin-top: 10px;
+}
+
+.section1 {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section1 p {
+  color: #000;
+    
+  /* typography/0-Recommended/H3 - Bold */
+  /* font-family: TT Norms Pro; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 144.444% */
+}
+
+.section2 {
+  /* gap: 8px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 32px;
+  width: 130px;
+  border-radius: 8px;
+  border: 1px solid var(--colors-neutral-border, #e1e4e6);
+  background: var(--colors-neutral-bg-surface, #fff);
+}
+
+.section2 a {
+  display: flex;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.section2 p {
+  color: var(--colors-neutral-fg, #171f22);
+  /* typography/text/xs/medium */
+  /* font-family: TT Norms Pro; */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-left: 10px;
+}
+
+.zone {
+  /* background-color: #E75420; */
+  display: flex;
+  /* justify-content: flex-start; */
+  width: 352px;
+  min-height: 32px;
+  margin-top: 8px;
+  gap: 20px;
+}
+
+.zone p {
+  padding: 4px 8px;
+  border-radius: 12px;
+  /* background: var(--colors-primary-bg-subtle, #FCEAE3); */
+  text-align: center;
+  /* typography/text/xs/medium */
+  /* font-family: TT Norms Pro; */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 8px;
+  height: 20px;
+  gap: 4px;
+  border-radius: 12px;
+  /* border: 0px solid var(--colors-orange-500, #E75420); */
+  background: var(--colors-neutral-bg-subtle, #f5f6f7);
+}

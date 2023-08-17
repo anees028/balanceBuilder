@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.main p {
+  color: #000;
+
+  /* typography/set/body - normal */
+  /* font-family: TT Norms Pro; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px; /* 150% */
+  /* 144.444% */
+}
+
+.resultslist{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
