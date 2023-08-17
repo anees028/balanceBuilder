@@ -1,9 +1,7 @@
 import React from "react";
 import classes from './servicecard.module.css';
 import flag from '../assets/icons/flag.svg';
-import bolt from '../assets/icons/bolt.svg';
 import arrow from '../assets/icons/arrow-right.svg'
-import history from '../assets/icons/history.svg'
 
 const ServiceCard = (props) => {
 

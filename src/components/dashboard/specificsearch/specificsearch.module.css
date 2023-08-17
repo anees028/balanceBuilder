@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.main div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.main p {
+    color: #000;
+    /* typography/set/h3 - bold */
+    /* font-family: TT Norms Pro; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+.searchbar img{
+    padding: 8px;
+}
