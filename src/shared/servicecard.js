@@ -1,33 +1,41 @@
 import React from "react";
 import classes from './servicecard.module.css';
+import flag from '../assets/icons/flag.svg';
+import bolt from '../assets/icons/bolt.svg';
+import arrow from '../assets/icons/arrow-right.svg'
+import history from '../assets/icons/history.svg'
 
 const ServiceCard = (props) => {
 
-    const data = props.objectData;
 
-    return(
-        <>
-            <div>
-                <span>
-                    <p className={classes.heading}>Your Service Request</p>
+    return (
+        <div className={classes.main}>
+            <div className={classes.statusHeading}>
+                <div className={classes.statuscontent}>
+                    <div className={classes.icon}>
+                        <img src={props.logo} alt='bolt' />
+                    </div>
+                    <h2 className={classes.head}>{props.name}</h2>
+                </div>
+                <div className={classes.statuscontent2}>
+                    <p className={classes.status}>{props.name}</p>
+                </div>
+            </div>
+            <div className={classes.date}>{props.date}</div>
+            <div className={classes.button}>
+                <a href="/#">
+                    <p>{props.button}</p>
+                    <img src={arrow} alt="arrow" />
+                </a>
+            </div>
+            <div className={classes.zone}>
+                <p className={classes.zonetitle}>{props.zone}</p>
+                <span className={classes.region}>
+                    <img src={flag} alt="flag" />
+                    <p >{props.region}</p>
                 </span>
             </div>
-            <div className={classes.main}>
-                <div className={classes.statusHeading}>
-                    <img className={classes.icon} src={data.bolt} alt='bolt' />
-                    <h2 className={classes.head}>{data.name}</h2>
-                    <p className={classes.status}>{data.status}</p>
-                </div>
-                <div className={classes.date}>{data.date}</div>
-                <div className={classes.description} >
-                    {data.description}
-                </div>
-                <div style={{display:'flex', flexDirection:'row'}}>
-                    <p className={classes.zone}>{data.zone}</p>
-                    <p className={classes.region}>{data.region}</p>
-                </div>
-            </div>
-        </>
+        </div>
     )
 }
 

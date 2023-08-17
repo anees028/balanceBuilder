@@ -1,110 +1,131 @@
 .main {
     display: flex;
-    width: 380px;
-    padding: 10px 14px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    width: 380px;
+    padding: 10px 14px;
+    gap: 15px;
     flex-shrink: 0;
     border-radius: 8px;
     border: 1px solid var(--colors-neutral-border, #E1E4E6);
     background: var(--colors-gray-100, #E1E4E6);
-
+    margin-right: 17px;
     /* shadows/elevations/base */
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
 }
 
-.heading{
-    color: #000;
-text-align: left;
-/* typography/0-Recommended/H2 - Bold */
-font-family: TT Norms Pro;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 133.333% */
+.statusHeading {
+    /* background-color: #fe3939; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin-top: -3%;
+}
+
+.statuscontent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.statuscontent2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
 }
 
 .icon {
     display: flex;
-    width: 24px;
-    height: 24px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.statusHeading{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    width: 25px;
+    height: 25px;
 }
 
 .head {
     color: #000;
-
     /* typography/0-Recommended/H3 - Bold */
-    font-family: TT Norms Pro;
-    font-size: 18px;
+    /* font-family: TT Norms Pro; */
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 26px;
     /* 144.444% */
 }
 
-.date{
-    display: flex;
-padding: 4px 8px;
-color: #CC1D1D;
-justify-content: center;
-align-items: center;
-gap: 4px;
-border-radius: 12px;
-background: var(--colors-error-bg-subtle, #F9E3E3);
-}
-
 .status {
-    display: flex;
-    /* align:'right', */
-    flex-direction: row-reverse;
     padding: 4px 8px;
-    justify-content: center;
-    align-items: right;
-    gap: 4px;
     border-radius: 12px;
     background: var(--colors-yellow-50, #FFF7DF);
 }
 
-.zone {
+.date {
     display: flex;
     padding: 4px 8px;
+    color: #CC1D1D;
+    gap: 4px;
+    border-radius: 12px;
+    background: var(--colors-error-bg-subtle, #F9E3E3);
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
     justify-content: center;
-    display: inline-flex;
-    align-items: flex-start;
-    margin-right: 12px;
+    height: 32px;
+    width: 240px;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 8px;
+    background: var(--colors-primary-bg-surface, #E75420);
+    
+}
+
+.button a {
+    display: flex;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.button p {
+    color: var(--colors-primary-fg-on-surface, #FFF);
+
+    /* typography/text/xs/medium */
+    /* font-family: TT Norms Pro; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    /* 133.333% */
+}
+
+.zone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.zonetitle {
+    padding: 4px 8px;
     border-radius: 12px;
     background: var(--colors-primary-bg-subtle, #FCEAE3);
 }
 
-.description {
-    display: flex;
-    padding: 8px 10px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    background: var(--colors-primary-bg-surface, #E75420);
-}
 
-.region{
+.region {
     display: flex;
-padding: 4px 8px;
-justify-content: center;
-align-items: center;
-gap: 4px;
-border-radius: 12px;
-border: 0px solid var(--colors-orange-500, #E75420);
-background: var(--colors-neutral-bg-subtle, #F5F6F7);
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    height: 20px;
+    gap: 4px;
+    border-radius: 12px;
+    border: 0px solid var(--colors-orange-500, #E75420);
+    background: var(--colors-neutral-bg-subtle, #F5F6F7);
 }
