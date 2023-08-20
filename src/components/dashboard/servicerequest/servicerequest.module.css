@@ -1,58 +1,70 @@
-.main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.section{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-grow: 1;
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
 }
-.section h1{
-    color: #000;
-    /* typography/0-Recommended/H2 - Bold */
-    /* font-family: TT Norms Pro; */
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px; /* 133.333% */
+.section h1 {
+  color: #000;
+  /* typography/0-Recommended/H2 - Bold */
+  /* font-family: TT Norms Pro; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
 }
-.section p{
-    color: #000;
-    /* typography/0-Recommended/small - medium */
-    /* font-family: TT Norms Pro; */
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    margin-top: 15px;
-    line-height: 16px; /* 133.333% */
+.section p {
+  color: #000;
+  /* typography/0-Recommended/small - medium */
+  /* font-family: TT Norms Pro; */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 15px;
+  line-height: 16px; /* 133.333% */
 }
-.section img{
-    display: flex;
-    width: 16px;
-    height: 16px;
-    justify-content: center;
-    align-items: center;
-}
-
-.section2{
-    flex-direction: row;
-    flex-grow: 1;
+.section img {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
-.section2 a{
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
+.section2 {
+  flex-direction: row;
+  flex-grow: 1;
 }
 
-.section2 p{
-    color: var(--colors-neutral-fg-muted, #617177);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    margin-right: 1%;
+.section2 a {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.section2 p {
+  color: var(--colors-neutral-fg-muted, #617177);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-right: 1%;
+}
+
+.vl {
+/* display: flex;
+gap: 14px;
+justify-content: center;
+align-items: center; */
+  width: 1px;
+  background: #000;
+  height: 27px;
+  margin-left: 14px;
+  margin-right: 14px;
 }

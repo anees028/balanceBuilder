@@ -22,6 +22,7 @@ const SearchResult = (props) => {
             button={x.button}
             zone={x.zone}
             region={x.region}
+            zoneStyles={x.zonestyle}
             regionFlag={x.regionFlag}
           />
         ))}
