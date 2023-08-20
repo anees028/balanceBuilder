@@ -9,14 +9,15 @@ const ServiceRequest = (props) => {
   const data = props.objectData;
 
   const card = data.map(x => (
-    <ServiceCard logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} />
+    <ServiceCard logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} balance={x.balance} />
   ))
 
   return (
     <div>
       <div className={classes.main}>
         <div className={classes.section}>
-          <h1>Your Service Requests |&nbsp;</h1>
+          <h1>Your Service Requests</h1>
+          <div className={classes.vl}></div>
           <p>Filter: &nbsp;</p>
           <img src={bolt} alt="bolt" />
           &nbsp;

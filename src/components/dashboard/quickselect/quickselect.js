@@ -76,7 +76,7 @@ const QuickSelect = (props) => {
     return (
         <div className={classes.main} >
             <div>
-                <h3 style={{}}>Quick Select</h3>
+                <h3>Quick Select</h3>
             </div>
             <div style={{marginTop:'-2%'}}>
                 <p>By default you’ll only get result from your zone - turn it off and you’ll see all zones</p>
