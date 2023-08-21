@@ -26,6 +26,8 @@
 .searchbar{
     display: flex;
     align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .searchbar img{
     padding: 8px;

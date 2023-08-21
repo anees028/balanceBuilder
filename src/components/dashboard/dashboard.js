@@ -41,7 +41,7 @@ const Dashboard = (props) => {
             description: 'Go to substation to review change',
             zone: 'Zone S',
             region: 'Region XYZ',
-            balance: 'Other balances affected'
+            // balance: 'Other balances affected'
         }, {
             logo: bolt,
             name: 'NA-VI5',
@@ -49,7 +49,7 @@ const Dashboard = (props) => {
             description: 'Go to substation to review change',
             zone: 'Zone S',
             region: 'Region XYZ',
-            balance: 'Other balances affected'
+            // balance: 'Other balances affected'
         },
     ]
 
