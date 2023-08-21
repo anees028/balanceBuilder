@@ -46,10 +46,12 @@ const ServiceCard = (props) => {
                     <img src={flag} alt="flag" />
                     <p >{props.region}</p>
                 </span>
-                <div className={classes.balance}>
-                    <img src={info} alt="info"/>
-                    <p>{props.balance}</p>
-                </div>
+                {props.balance!==undefined &&
+                    <div className={classes.balance}>
+                        <img src={info} alt="info"/>
+                        <p>{props.balance}</p>
+                    </div>
+                }
             </div>
         </div>
     )
