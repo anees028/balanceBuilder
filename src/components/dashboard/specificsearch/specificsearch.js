@@ -1,15 +1,19 @@
 import React from "react";
 import classes from './specificsearch.module.css';
-
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import Searchbar from "../../../shared/seachbars/searchbar";
 
 import flag from '../../../assets/icons/flag.svg';
 import bolt from '../../../assets/icons/bolt.svg';
 import frame from '../../../assets/icons/frame.svg';
-import search from '../../../assets/icons/search.svg';
+
 
 const SpecificSearch = () => {
+    const searchbarContent = {
+        placeholder: "Search for a region or substation",
+        styles:{
+            width:'545px'
+        }
+    } 
 
     return (
         <div className={classes.main}>
@@ -23,15 +27,7 @@ const SpecificSearch = () => {
                 <p>balance</p>
             </div>
             <div className={classes.searchbar}>
-                <img src={search} alt='search' />
-                <Box
-                    sx={{
-                        width: 530,
-                        maxWidth: '100%',
-                    }}
-                >
-                    <TextField fullWidth label="Search for a region or substation" id="fullWidth" />
-                </Box>
+                <Searchbar properties={searchbarContent}/>
             </div>
         </div>
     )
