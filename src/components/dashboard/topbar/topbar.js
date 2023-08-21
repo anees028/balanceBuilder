@@ -1,11 +1,11 @@
 import React from "react";
 import classes from './topbar.module.css';
+import Tooltip, {TooltipProps} from '@mui/material/Tooltip';
 
 import Searchbar from "../../../shared/seachbars/searchbar";
-
 import hand from '../../../assets/icons/hand.svg';
 import question from '../../../assets/icons/question.svg'
-import Tooltip from "../../../shared/tooltip/tooltip";
+
 
 const Topbar = (props) => {
 
@@ -24,9 +24,12 @@ const Topbar = (props) => {
                 <p>{props.title}</p>
             </div>
             <div >
-                <Tooltip content={tooltipcontent} direction="left">
+                <Tooltip title={tooltipcontent} placement="left-end">
                     <img className={classes.image2} src={question} alt='question' />
                 </Tooltip>
+                {/* <Tooltip content={tooltipcontent} direction="left">
+                    <img className={classes.image2} src={question} alt='question' />
+                </Tooltip> */}
                 <Searchbar properties={searchbarContent}/>
             </div>
 
