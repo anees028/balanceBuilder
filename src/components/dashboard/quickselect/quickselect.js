@@ -12,10 +12,8 @@ const QuickSelect = (props) => {
             name:'Zone S',
             styles:{
                 color: '#E75420',
-                background: 'var(--colors-primary-bg-subtle, #FCEAE3);',
+                background: 'var(--colors-primary-bg-subtle, #FCEAE3)',
                 border: '0.5px solid var(--colors-orange-500, #E75420)',
-                borderRadius: '0.5px solid var(--colors-orange-500, #E75420);',
-                //boxShadow: '10px 10px 5px #E75420;'
             }
         },
         {
@@ -24,8 +22,7 @@ const QuickSelect = (props) => {
             styles:{
                 color: '#258998',
                 border: '0.5px solid var(--color-white-100, #ffffff)',
-                background:'var(--colors-secondary-bg-subtle, #E4F0F2);',
-                borderRadius: '0.5px solid var(--colors-orange-500, #E75420);',
+                background:'var(--colors-secondary-bg-subtle, #E4F0F2)',
             }
         },
         {
@@ -35,9 +32,6 @@ const QuickSelect = (props) => {
                 color: 'var(--colors-success-fg-on-subtle, #138719)',
                 border: '0.5px solid var(--color-white-100, #ffffff)',
                 background: 'var(--colors-success-bg-subtle, #E2F0E2)',
-                borderRadius: '0.5px solid var(--colors-orange-500, #E75420);',
-                // border: '0.5px solid var(--colors-orange-500, #E75420);',
-                // bgcolor: '#FCEAE3'
             }
         },
         {
@@ -47,7 +41,6 @@ const QuickSelect = (props) => {
                 color: 'var(--colors-crimson-500, #990035)',
                 border: '0px solid var(--colors-crimson-500, #990035)',
                 background: 'var(--colors-crimson-50, #F2DFE6)',
-                borderRadius: '0.5px solid var(--colors-orange-500, #E75420);',
             }
         },
     ];
@@ -88,8 +81,9 @@ const QuickSelect = (props) => {
             <div className={classes.divSpace}>
                 <p>Select a zone</p>
                 <div className={classes.badge}>
-                    {badges.map(x => (
+                    {badges.map((x, index) => (
                         <button
+                            key={index}
                             style={x.styles}
                         >{x.name}</button>
                     ))}

@@ -8,8 +8,8 @@ import ServiceCard from "../../../shared/servicecard";
 const ServiceRequest = (props) => {
   const data = props.objectData;
 
-  const card = data.map(x => (
-    <ServiceCard logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} balance={x.balance} />
+  const card = data.map((x, index) => (
+    <ServiceCard key={index} logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} balance={x.balance} />
   ))
 
   return (

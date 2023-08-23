@@ -15,8 +15,9 @@ const SearchResult = (props) => {
         <img src={flag} alt="flag" />
       </div>
       <div className={classes.resultslist}>
-        {results.map((x) => (
+        {results.map((x, index) => (
           <ResultCard
+            key={index}
             name={x.name}
             logo={x.logo}
             button={x.button}
