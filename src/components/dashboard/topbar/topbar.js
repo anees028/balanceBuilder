@@ -1,6 +1,6 @@
 import React from "react";
 import classes from './topbar.module.css';
-import Tooltip, {TooltipProps} from '@mui/material/Tooltip';
+import Tooltip from '@mui/material/Tooltip';
 
 import Searchbar from "../../../shared/seachbars/searchbar";
 import hand from '../../../assets/icons/hand.svg';
