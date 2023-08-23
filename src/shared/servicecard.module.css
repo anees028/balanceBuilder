@@ -4,7 +4,7 @@
   align-items: flex-start;
   width: 380px;
   padding: 10px 14px;
-  gap: 15px;
+  gap: 20px;
   /* flex-shrink: 0; */
   border-radius: 8px;
   border: 1px solid var(--colors-neutral-border, #e1e4e6);
@@ -23,7 +23,7 @@
   width: 100%;
   align-content: center;
   text-align: center;
-  margin-top: -3%;
+  margin-top: -2%;
 }
 
 .statuscontent {

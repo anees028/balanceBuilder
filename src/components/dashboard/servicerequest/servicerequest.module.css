@@ -2,13 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
 }
 
 .section {
   display: flex;
   align-items: center;
   flex-direction: row;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .section h1 {
   color: #000;
@@ -38,24 +39,29 @@
 }
 
 .section2 {
-  flex-direction: row;
-  flex-grow: 1;
-}
-
-.section2 a {
   display: flex;
-  justify-content: flex-end;
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  height: auto 16px;
+  width: auto 85px;
 }
 
-.section2 p {
+.section2 button{
+  border-radius: 8px;
+  border: 0px solid;
+  background-color: white;
+  gap: 8px;
+  display: flex;
   color: var(--colors-neutral-fg-muted, #617177);
+  /* typography/text/xs/medium */
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 16px;
-  margin-right: 1%;
+  line-height: 16px; 
+  cursor: pointer;
 }
+
+
 
 .vl {
 /* display: flex;

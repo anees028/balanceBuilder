@@ -26,10 +26,9 @@ const ServiceRequest = (props) => {
           <p>{data[0].status}</p>
         </div>
         <div className={classes.section2}>
-          <a href="/#">
-            <p>See History</p>
-            <img src={history} alt="history" />
-          </a>
+          <button>See History
+            <img src={history} alt="history" width='16px' height='16px'/>
+          </button>
         </div>
       </div>
       <div style={{ display: "flex", flexDirection: "row", flexWrap:'wrap' }}>
