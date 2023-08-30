@@ -12,8 +12,8 @@ const QuickSelect = (props) => {
             name:'Zone S',
             styles:{
                 color: '#E75420',
-                background: 'var(--colors-primary-bg-subtle, #FCEAE3)',
                 border: '0.5px solid var(--colors-orange-500, #E75420)',
+                background: 'var(--colors-primary-bg-subtle, #FCEAE3)',
             }
         },
         {
@@ -39,7 +39,7 @@ const QuickSelect = (props) => {
             name:'Zone L',
             styles:{
                 color: 'var(--colors-crimson-500, #990035)',
-                border: '0px solid var(--colors-crimson-500, #990035)',
+                border: '0px solid var(--colors-crimson-500, #ffffff)',
                 background: 'var(--colors-crimson-50, #F2DFE6)',
             }
         },
@@ -63,7 +63,7 @@ const QuickSelect = (props) => {
     //         >{x.name}</button>
     //     </div>
     // ))
-    
+
     
     
     return (
@@ -88,8 +88,6 @@ const QuickSelect = (props) => {
                         >{x.name}</button>
                     ))}
                 </div>
-                {/* <Title2></Title2>
-                <myButton></myButton> */}
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ import bolt from '../../../assets/icons/bolt.svg';
 import frame from '../../../assets/icons/frame.svg';
 
 
-const SpecificSearch = () => {
+const SpecificSearch = (props) => {
     const searchbarContent = {
         placeholder: "Search for a region or substation",
         styles:{
@@ -27,7 +27,7 @@ const SpecificSearch = () => {
                 <p>balance</p>
             </div>
             <div className={classes.searchbar}>
-                <Searchbar properties={searchbarContent}/>
+                <Searchbar properties={searchbarContent} onUserInput={props.onUserInput}/>
             </div>
         </div>
     )

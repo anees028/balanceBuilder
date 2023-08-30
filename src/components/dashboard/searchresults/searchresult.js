@@ -4,6 +4,7 @@ import classes from "./searchresult.module.css";
 import ResultCard from "../../../shared/resultCard";
 
 import flag from "../../../assets/icons/flag.svg";
+import Pagination from "../../../shared/pagination/pagination";
 
 const SearchResult = (props) => {
   const results = props.results;
@@ -28,6 +29,7 @@ const SearchResult = (props) => {
           />
         ))}
       </div>
+      <Pagination />
     </div>
   );
 };
