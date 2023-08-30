@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  gap: 4px;
+  /* width: 220px; */
+  /* height: 40px; */
+  border-radius: 8px;
+  border: 1px solid var(--colors-neutral-border, #e1e4e6);
+  background: var(--colors-neutral-bg-surface, #fff);
+}
+
+.main select {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: flex-start;
+  /* width: 240px; */
+  /* height: 168px; */
+}
+
+.menus{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

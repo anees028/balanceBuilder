@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import classes from "./servicerequest.module.css";
 import bolt from "../../../assets/icons/bolt.svg";
 import frame from "../../../assets/icons/frame.svg";
@@ -7,11 +7,25 @@ import ServiceCard from "../../../shared/servicecard";
 
 const ServiceRequest = (props) => {
   const data = props.objectData;
-
-  const card = data.map(x => (
-    <ServiceCard logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} balance={x.balance} />
+  // const selectedBadge = props.selectBadge;
+  debugger
+  // console.log('Data in service : ',data)
+  
+  const card= data.map((x, index) => (
+    <ServiceCard key={index} logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} balance={x.balance} />
   ))
-
+  const [cardData, setCardData] = useState(card);
+    
+  useEffect(() => {
+    debugger
+    console.log('Updated Data : ', data)
+    const card2= data.map((x, index) => (
+      <ServiceCard key={index} logo={x.logo} name={x.name} status={x.status} date={x.date} button={x.description} zone={x.zone} region={x.region} balance={x.balance} />
+    ))
+    setCardData(card2)
+  },[data])
+  
+  
   return (
     <div>
       <div className={classes.main}>
@@ -32,7 +46,7 @@ const ServiceRequest = (props) => {
         </div>
       </div>
       <div style={{ display: "flex", flexDirection: "row", flexWrap:'wrap' }}>
-        {card}
+        {cardData}
       </div>
     </div>
   );

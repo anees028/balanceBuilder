@@ -4,6 +4,7 @@ import classes from "./searchresult.module.css";
 import ResultCard from "../../../shared/resultCard";
 
 import flag from "../../../assets/icons/flag.svg";
+import Pagination from "../../../shared/pagination/pagination";
 
 const SearchResult = (props) => {
   const results = props.results;
@@ -15,8 +16,9 @@ const SearchResult = (props) => {
         <img src={flag} alt="flag" />
       </div>
       <div className={classes.resultslist}>
-        {results.map((x) => (
+        {results.map((x, index) => (
           <ResultCard
+            key={index}
             name={x.name}
             logo={x.logo}
             button={x.button}
@@ -27,6 +29,7 @@ const SearchResult = (props) => {
           />
         ))}
       </div>
+      <Pagination />
     </div>
   );
 };

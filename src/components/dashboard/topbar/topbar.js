@@ -12,8 +12,9 @@ const Topbar = (props) => {
     const searchbarContent = {
         placeholder: `Search for assets by name - you’ll be redirected to the diagram view`,
         styles:{
-            width:'596px',
-            marginLeft:'8px'
+            width:'550px',
+            marginLeft:'8px',
+            marginRight:'10%'
         }
     }
     const tooltipcontent = `Search for specific assets ( switches, transformers, lines, telemeters, counters and busbars). Click on the name of the asset from the dropdownlist and you’ll be redirected to the diagram view.`
